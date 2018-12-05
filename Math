@@ -10,38 +10,41 @@ namespace MathDrill
     {
         static void Main(string[] args)
         {
-            //int total = 5 + 10;
-            //int otherTotal = 12 + 22;
-            //int combined = total + otherTotal;
-            //Console.WriteLine(combined);
-            //Console.ReadLine();
-
-            //int difference = 10 - 5;
-            //Console.WriteLine("Five minus Ten = " difference.ToString());
-            //Console.ReadLine();
-
-            //int product = 10 * 5;
-            //Console.WriteLine(product);
-            //Console.ReadLine();
-
-            //int quotiant = 100 / 5;
-            //Console.WriteLine(quotiant);
-            //Console.ReadLine();
-
-            //int remainder = 11 % 2;
-            //Console.WriteLine(remainder);
-            //Console.ReadLine();
-
-            //bool trueOrfalse = 12 > 5;
-            //Console.WriteLine(trueOrfalse.ToString());
-            //Console.ReadLine();
-
-            //int roomTemperature = 70;
-            //int currentTemperature = 70;
-
-            //bool isWarm = currentTemperature >= roomTemperature;
-            //Console.WriteLine(isWarm);
-            //Console.ReadLine();
+            Console.WriteLine("Please write a number: ");
+            int yourNumber = Console.WriteLine();
+            Console.ReadLine()
+            int product = yourNumber * 50;
+            Console.WriteLine(product);
+            Console.WriteLine("Your number times 50 is :" = yourNumber);
+            Console.ReadLine();
+            
+            Console.WriteLine("Please write a number: ");
+            int yourNumber = Console.WriteLine();
+            Console.ReadLine();
+            int total = yourNumber + 25;
+            Console.WriteLine("Your number plus 25 is: " yourNumber + 25);
+            Console.ReadLine();
+            
+             Console.WriteLine("Please write a number: ");
+            int yourNumber = Console.WriteLine();
+            Console.ReadLine()
+            int quotiant = yourNumber / 12.5;
+            Console.WriteLine("Your number divided by 12.5 is: "quotiant);
+            Console.ReadLine();
+            
+            Console.WriteLine("Please write a number: ");
+            int yourNumber = Console.WriteLine();
+            Console.ReadLine();
+            bool trueOrfalse = yourNumber > 50;
+            Console.WriteLine(trueOrfalse.ToString());
+            Console.ReadLine();
+            
+            Console.WriteLine("Please write a number: ");
+            int yourNumber = Console.WriteLine();
+            Console.ReadLine()
+            int remainder = yourNumber % 7;
+            Console.WriteLine(remainder);
+            Console.ReadLine();
         }
     }
 }
