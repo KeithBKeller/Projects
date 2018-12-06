@@ -4,38 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnonymousIncomeComparisonProgram
+namespace ComparisonProgram
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(int[] args)
         {
             Console.WriteLine("Anonymous Income Comparison Program");
 
             Console.WriteLine("Person 1:");
             Console.WriteLine("Hourly rate:");
-            int hourlyRate1 = Console.WriteLine();
+            int hourlyRate1 = Convert.ToInt32(hourlyRate1);
             Console.WriteLine("Hours Per Week:");
             Console.ReadLine();
-            int weeklyHours1 = Console.WriteLine();
+            int weeklyHours1 = Convert.ToInt32(weeklyHours1);
             Console.ReadLine();
 
             Console.WriteLine("Person 2:");
             Console.WriteLine("Hourly rate:");
-            int hourlyRate2 = Console.WriteLine();
+            int hourlyRate2 = Convert.ToInt32(hourlyRate2);
             Console.ReadLine();
             Console.WriteLine("Hours Per Week:");
-            int weeklyHours2 = Console.WriteLine();
+            int weeklyHours2 = Convert.ToInt32(weeklyHours2);
             Console.ReadLine();
 
             Console.WriteLine("Annual Salary of Person 1:");
             int product1 = hourlyRate1 * weeklyHours1;
-            Console.WriteLine(product);
+            Console.WriteLine(product1);
             Console.ReadLine();
 
             Console.WriteLine("Annual Salary of Person 2:");
             int product2 = hourlyRate2 * weeklyHours2;
-            Console.WriteLine(product);
+            Console.WriteLine(product2);
             Console.ReadLine();
 
             Console.WriteLine("Does person 1 make more than person 2?");
