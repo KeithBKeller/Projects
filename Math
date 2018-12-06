@@ -11,38 +11,33 @@ namespace MathDrill
         static void Main(string[] args)
         {
             Console.WriteLine("Please write a number: ");
-            int yourNumber = Console.WriteLine();
-            Console.ReadLine()
-            int product = yourNumber * 50;
+            int yourNumber1 = int.Parse(Console.ReadLine());
+            int product = yourNumber1 * 50;
             Console.WriteLine(product);
-            Console.WriteLine("Your number times 50 is :" = yourNumber);
+            Console.WriteLine("Your number times 50 is :" + product);
             Console.ReadLine();
-            
+
             Console.WriteLine("Please write a number: ");
-            int yourNumber = Console.WriteLine();
+            int yourNumber2 = int.Parse(Console.ReadLine());
+            int total = yourNumber2 + 25;
+            Console.WriteLine("Your number plus 25 is: " + total);
             Console.ReadLine();
-            int total = yourNumber + 25;
-            Console.WriteLine("Your number plus 25 is: " yourNumber + 25);
-            Console.ReadLine();
-            
-             Console.WriteLine("Please write a number: ");
-            int yourNumber = Console.WriteLine();
-            Console.ReadLine()
-            int quotiant = yourNumber / 12.5;
-            Console.WriteLine("Your number divided by 12.5 is: "quotiant);
-            Console.ReadLine();
-            
+
             Console.WriteLine("Please write a number: ");
-            int yourNumber = Console.WriteLine();
+            double yourNumber3 = double.Parse(Console.ReadLine());
+            double quotiant = yourNumber3 / 12.5;
+            Console.WriteLine("Your number divided by 12.5 is: " + quotiant);
             Console.ReadLine();
-            bool trueOrfalse = yourNumber > 50;
+
+            Console.WriteLine("Please write a number: ");
+            int yourNumber4 = int.Parse(Console.ReadLine());
+            bool trueOrfalse = yourNumber4 > 50;
             Console.WriteLine(trueOrfalse.ToString());
             Console.ReadLine();
-            
+
             Console.WriteLine("Please write a number: ");
-            int yourNumber = Console.WriteLine();
-            Console.ReadLine()
-            int remainder = yourNumber % 7;
+            int yourNumber5 = int.Parse(Console.ReadLine());
+            int remainder = yourNumber5 % 7;
             Console.WriteLine(remainder);
             Console.ReadLine();
         }
