@@ -8,11 +8,11 @@ namespace BooleanLogic
 {
     class Program
     {
-        private static void Main()
+        static void Main(string[] args)
         {
             Console.WriteLine("What is your age?");
             Console.ReadLine();
-            int AGE = 15;
+            int yourAge = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Have you ever had a DUI?");
             Console.ReadLine();
@@ -20,11 +20,11 @@ namespace BooleanLogic
 
             Console.WriteLine("How many speeding tickets do you have?");
             Console.ReadLine();
-            int speedingTicket = 0;
+            int speedingTicket = int.Parse(Console.ReadLine());
 
-            bool Qualified = (AGE >= 15 && DUI == false && speedingTicket <= 3);
+            bool Qualified = (yourAge >= 15 && DUI == false && speedingTicket <= 3);
 
-            Console.WriteLine(Qualified );
+            Console.WriteLine(Qualified);
             Console.ReadLine();
         }
     }
