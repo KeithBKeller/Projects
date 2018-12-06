@@ -12,29 +12,27 @@ namespace DailyReport
         {
             Console.WriteLine("THE TECH ACADEMY");
             Console.WriteLine("Daily Report");
-            Console.ReadLine();
+            
             Console.WriteLine("What coures are you on?");
             string courseName = Console.ReadLine();
-            Console.WriteLine("Your course is;" + courseName);
-            Console.ReadLine();
+            
             Console.WriteLine("What page number are you on?");
-            int pageNumber = Console.WriteLine();
-            Console.WriteLine("Your page number is:" + pageNumber);
-            Console.ReadLine();
+            int pageNumber = int.Parse(Console.ReadLine());
+            
             Console.WriteLine("Do you need help with anything? Please answer “true” or “false”.");
-            bool Help = Console.WriteLine();
-            Console.ReadLine();
+            string Help = Console.ReadLine();
+            
             Console.WriteLine("Were there any positive experiences you’d like to share ? Please give specifics.");
-            string positiveExperiences = Console.WriteLine();
-            Console.ReadLine();
+            string positiveExperiences = Console.ReadLine();
+            
             Console.WriteLine("Is there any other feedback you’d like to provide? Please be specific.");
-            Console.ReadLine();
+            string feedBack = Console.ReadLine();
+
             Console.WriteLine("How many hours did you study today?");
-            int hoursStudied = Console.WriteLine();
-            Console.WriteLine("You studied:" = hoursStudied);
-            Console.ReadLine();
+            int hoursStudied = int.Parse(Console.ReadLine());
+            
             Console.WriteLine("And Instructor will contact you shortly, Thank you for your answers!");
             Console.ReadLine();
-        }   
+        }
     }
 }
