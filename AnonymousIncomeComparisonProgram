@@ -11,10 +11,38 @@ namespace drills
         static void Main(string[] args)
         {
             Console.WriteLine("Anonymous Income Comparison Program");
+
             Console.WriteLine("Person 1:");
             Console.WriteLine("Hourly rate:");
-            int hourlyRate = Console.WriteLine();
+            int hourlyRate1 = Console.WriteLine();
+            Console.WriteLine("Hours Per Week:");
             Console.ReadLine();
+            int weeklyHours1 = Console.WriteLine();
+            Console.ReadLine();
+
+            Console.WriteLine("Person 2:");
+            Console.WriteLine("Hourly rate:");
+            int hourlyRate2 = Console.WriteLine();
+            Console.ReadLine();
+            Console.WriteLine("Hours Per Week:");
+            int weeklyHours2 = Console.WriteLine();
+            Console.ReadLine();
+
+            Console.WriteLine("Annual Salary of Person 1:");
+            int product1 = hourlyRate1 * weeklyHours1;
+            Console.WriteLine(product);
+            Console.ReadLine();
+
+            Console.WriteLine("Annual Salary of Person 2:");
+            int product2 = hourlyRate2 * weeklyHours2;
+            Console.WriteLine(product);
+            Console.ReadLine();
+
+            Console.WriteLine("Does person 1 make more than person 2?");
+            bool trueOrfalse = product1 > product2;
+            Console.WriteLine(trueOrfalse.ToString());
+            Console.ReadLine();
+
         }
     }
 }
