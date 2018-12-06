@@ -8,33 +8,29 @@ namespace ComparisonProgram
 {
     class Program
     {
-        static void Main(int[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("Anonymous Income Comparison Program");
 
             Console.WriteLine("Person 1:");
             Console.WriteLine("Hourly rate:");
-            int hourlyRate1 = Convert.ToInt32(hourlyRate1);
+            double hourlyRate1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Hours Per Week:");
-            Console.ReadLine();
-            int weeklyHours1 = Convert.ToInt32(weeklyHours1);
-            Console.ReadLine();
+            int weeklyHours1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Person 2:");
             Console.WriteLine("Hourly rate:");
-            int hourlyRate2 = Convert.ToInt32(hourlyRate2);
-            Console.ReadLine();
+            double hourlyRate2 = double.Parse(Console.ReadLine());
             Console.WriteLine("Hours Per Week:");
-            int weeklyHours2 = Convert.ToInt32(weeklyHours2);
-            Console.ReadLine();
+            int weeklyHours2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Annual Salary of Person 1:");
-            int product1 = hourlyRate1 * weeklyHours1;
+            double product1 = hourlyRate1 * weeklyHours1;
             Console.WriteLine(product1);
             Console.ReadLine();
 
             Console.WriteLine("Annual Salary of Person 2:");
-            int product2 = hourlyRate2 * weeklyHours2;
+            double product2 = hourlyRate2 * weeklyHours2;
             Console.WriteLine(product2);
             Console.ReadLine();
 
