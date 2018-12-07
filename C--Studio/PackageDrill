@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PackageExpress
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
+
+            Console.WriteLine("Please enter package weight:");
+            int packageWeight = int.Parse(Console.ReadLine());
+
+            if (packageWeight > 50)
+            {
+                Console.WriteLine("Your package is to heavy to ship with Package Express, have a nice day!");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("Please enter package width:");
+                int packageWidth = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Please enter package height:");
+                int packageHeight = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Please enter package length:");
+                int packageLength = int.Parse(Console.ReadLine());
+
+                int product = packageWidth * packageHeight * packageLength;
+
+                    if (product > 50)
+                    {
+                        Console.WriteLine("Your package is to big to ship with Package Express, have a nice day!");
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                    int price = packageWeight * packageWidth * packageHeight * packageLength;
+                    double quotiant = price / 100;
+                    Console.WriteLine("Your estimated price is: $" + quotiant);
+                    Console.ReadLine();
+
+                    Console.WriteLine("Thank you for shipping with PACKAGE EXPRESS");
+                    Console.ReadLine();
+                    }
+            }
+        }
+    }
+}
