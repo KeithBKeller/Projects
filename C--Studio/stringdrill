@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StringDrill
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = "Practice";
+            string quote = "This is the string drill program. It is very simple, and strings are kinda easy too. \n Strings are basically just sentences strung together to create unflitered text in the command tab. \n This is probably my favorite section out of this entire course, and i consider myself very lucky to be a part 0f it.";
+
+            name = name.ToUpper();
+
+            Console.WriteLine(name);
+            Console.WriteLine(quote);
+            Console.ReadLine();
+        }
+    }
+}
