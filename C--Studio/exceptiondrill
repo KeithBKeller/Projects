@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exception
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("Pick a number");
+                int numberOne = Convert.ToInt32(Console.ReadLine());
+                double quotiant1 = numberOne / 1;
+                double quotiant2 = numberOne / 8;
+                double quotiant3 = numberOne / 365;
+                double quotiant4 = numberOne / 25;
+                double quotiant5 = numberOne / 4586;
+                Console.WriteLine("Dividing the numbers...");
+
+                Console.WriteLine(numberOne + " divided by 1 Equals " + quotiant1);
+                Console.WriteLine(numberOne + " divided by 8 Equals " + quotiant2);
+                Console.WriteLine(numberOne + " divided by 365 Equals " + quotiant3);
+                Console.WriteLine(numberOne + " divided by 25 Equals " + quotiant4);
+                Console.WriteLine(numberOne + " divided by 4586 Equals " + quotiant5);
+
+                Console.ReadLine();
+            }
+
+            catch (FormatException)
+            {
+                Console.WriteLine("Please type a whole number.");
+            }
+
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Please dont divide by zero");
+            }
+
+            finally
+            {
+                Console.ReadLine();
+            }
+        }
+    }
+}
