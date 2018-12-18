@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+
+namespace Drill
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please write a number:");
+            int yourNumber = int.Parse(Console.ReadLine());
+
+            string text = "yourNumber";
+            File.WriteAllText(@"C:\Users\student\Logs\logs.txt", text);
+
+            Console.WriteLine("The number you chose is: " + yourNumber);
+        }
+    }
+}
